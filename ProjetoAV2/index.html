@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="MeuStyle.css">
+    <title>TechCursos</title>
+
+</head>
+<body>
+    <header>
+
+        <nav>
+            <a href="cursos.html">Cursos</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="">Seja um apoiador</a>
+            <a href="">Validação de Certificado</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introducao">
+            <h1>Um pouco sobre nós</h1>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Huhmcy7HbsU" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <p>
+                Lançado em 2013, o projeto de ensinar tecnologia à distância foi ganhando forma e hoje já conta com milhares 
+                de alunos inscritos e uma grande quantidade de material gratuito.
+            </p>
+            <p>
+                O professor carioca Afonso Pereira sempre buscou criar aulas diferentes dentro da sua sala. Quando descobriu
+                que poderia dar aulas para milhares de pessoas pela internet, criou seu primeiro curso de PHP em 2005. Desde aquela época,
+                já teve mais de 8 milhões de downloads e colaborou para a formação de muitos programadores iniciantes.
+            </p>
+            <p>
+                Em 2013, com o apoio principal da Jotasnet, Afonso iniciou seu projeto mais ambicioso: ensinar tecnologia através de um 
+                site que disponibilizasse cursos completos em vídeo, com novas aulas lançadas semanalmente. Ainda em 2013, foi lançado o 
+                TechCurso de HTML5 e no início de 2014, iniciou o TechCurso de Algoritmo. Ambos 100% gratuitos.
+            </p>
+
+        </section>
+
+        <section id="dados">
+                    
+                    <form action="perfil.html" method="POST">
+                        <fieldset>
+                            <label for="contato">Nome*</label>
+                            <input type="text" id="nome" value="Nome" style="opacity: 0.5;" onfocus="limpaCampo(1)" required>
+            
+                            <label for="contato">Sobrenome*</label>
+                            <input type="text" id="sobrenome" value="Sobrenome" style="opacity: 0.5;" onfocus="limpaCampo(2)" required>
+            
+                            <label for="contato">E-mail*</label>
+                            <input type="email" id="email" value="E-mail" style="opacity: 0.5;" onfocus="limpaCampo(3)" required>
+            
+                            <label for="contato">Senha*</label>
+                            <input type="password" id="senha" required>
+            
+                            <label for="contato">Confirmar senha*</label>
+                            <input type="password" id="confirmar" required>
+        
+                            <input type="submit" id="registrar" value="Registrar">
+                        </fieldset>
+                    </form>
+
+                    <aside id="aviso">
+                            <figure>
+                                <img src="img/cuidado.png" alt="cuidado">
+                
+                                <h2>IMPORTANTE</h2>
+                                <p>
+                                    Todos os cursos disponíveis na plataforma da TechCursos são gratuitos,
+                                     porém a EMISSÃO DE CERTIFICADOS é um serviço pago, dependendo do pacote contratado.
+                                </p>
+                
+                                <p>
+                                    A receita obtida com a venda dos certificados é usada para o custeio de infraestrutura
+                                     para manter a plataforma funcionando.
+                                </p>
+                                    
+                            </figure>
+                        </aside>
+        </section>
+
+    </main>
+
+    <footer>
+        <section id="Institucional">
+            <h2>Institucional</h2>
+
+            <p><a href="">Quem somos</a></p>
+            <p><a href="">Política de Privacidade</a></p>
+        </section>
+
+        <section id="social">
+            <h2>Redes Sociais</h2>
+            
+            <a href="https://www.instagram.com/cursoemvideo/" target="_blank">
+                <img src="icons/insta.svg" alt="Instagram" onmouseover="src='icons/instaON.svg'" onmouseout="src='icons/insta.svg'">
+            </a>
+
+            <a href="https://www.facebook.com/CursosEmVideo/" target="_blank">
+                <img src="icons/face.svg" alt="Facebook" onmouseover="src='icons/faceON.svg'" onmouseout="src='icons/face.svg'">
+            </a>
+
+            <a href="https://twitter.com/guanabara" target="_blank">
+                <img src="icons/twitter.svg" alt="Twitter" onmouseover="src='icons/twitterON.svg'" onmouseout="src='icons/twitter.svg'">
+            </a>
+
+            <a href="https://www.youtube.com/cursoemvideo" target="_blank">
+                <img src="icons/youtube.svg" alt="Youtube" onmouseover="src='icons/youtubeON.svg'" onmouseout="src='icons/youtube.svg'">
+            </a>
+            
+        </section>
+    </footer>
+
+    <script src="MeuScript.js"></script>
+</body>
+</html>
